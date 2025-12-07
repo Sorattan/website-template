@@ -61,12 +61,14 @@ Admin dosyaları `admin/` klasörü altında yer alır. Bu sayfalar yalnızca **
   - Yeni duyuru ekleme formu (tarih, başlık, özet, detay, ek dosya alanları)
   - Statik tablo ile mevcut duyuruların listelenmesi
 <img width="2531" height="1231" alt="image" src="https://github.com/user-attachments/assets/738b58cf-b9e0-4507-8213-c9d032f98540" />
+<br><br>
 
 - **Hizmet Yönetimi (`admin/admin-hizmetler.html`)**
   - Hizmet adı, kategorisi, kısa & detaylı açıklama, fiyat, durum vb. alanlara sahip form
   - Anasayfada öne çıkarma seçeneği
   - Statik hizmet listesi tablosu
 <img width="2529" height="1237" alt="image" src="https://github.com/user-attachments/assets/6755f5e5-af64-475d-a138-9be1e9fa6b1c" />
+<br><br>
 
 - **Sayılarla Klinik Verileri (`admin/admin-sayilarla-klinik.html`)**
   - Yıllara göre hasta sayısı verileri için düzenlenebilir tablo
