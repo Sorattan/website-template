@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="utf-8">
-    <title>DentCare - Dental Clinic Website Template</title>
+    <title>Dent&Care</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -53,7 +53,7 @@
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center">
-                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Çalışma Saatleri: Pazartesi - Cumartesi 09.00 - 19.00, Pazar Kapalı </small>
                 </div>
             </div>
             <div class="col-md-6 text-center text-lg-end">
@@ -74,35 +74,60 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
         <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>DentCare</h1>
+            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Dent&Care</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
+                <a href="index.html" class="nav-item nav-link active">Ana Sayfa</a>
+                <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
+
+                <!-- HİZMETLERİMİZ -->
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hizmetlerimiz</a>
                     <div class="dropdown-menu m-0">
-                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                        <a href="team.html" class="dropdown-item">Our Dentist</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                        <a href="service.html#implant" class="dropdown-item">İmplant Tedavisi</a>
+                        <a href="service.html#ortodonti" class="dropdown-item">Ortodonti</a>
+                        <a href="service.html#beyazlatma" class="dropdown-item">Diş Beyazlatma</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+
+                <!-- BİRİMLERİMİZ -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Birimlerimiz</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="team.html#yetiskin" class="dropdown-item">Genel Cerrahi</a>
+                        <a href="team.html#cocuk" class="dropdown-item">Pedodonti</a>
+                        <a href="team.html#cerrahi" class="dropdown-item">Ağız ve Çene Cerrahisi</a>
+                    </div>
+                </div>
+
+                <!-- SAYFALAR -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sayfalar</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="price.html" class="dropdown-item">Fiyatlandırma</a>
+                        <a href="testimonial.html" class="dropdown-item">Hasta Yorumları</a>
+                        <a href="duyurular.html" class="dropdown-item">Duyurular</a>
+                        <a href="sayilarla-klinik.html" class="dropdown-item">Sayılarla Kliniğimiz</a>
+                        <a href="appointment.html" class="dropdown-item">Randevu Formu</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">İletişim</a>
+                <a href="misyon-vizyon.html" class="nav-item nav-link">Misyon-Vizyon</a>
             </div>
-            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
-            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <i class="fa fa-search"></i>
+            </button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Randevu Al</a>
         </div>
     </nav>
     <!-- Navbar End -->
 
 
-    <!-- Full Screen Search Start -->
+    <!-- Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
@@ -111,52 +136,93 @@
                 </div>
                 <div class="modal-body d-flex align-items-center justify-content-center">
                     <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Aranacak kelimeyi yazın">
                         <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Full Screen Search End -->
+    <!-- Search End -->
 
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0">
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
+
+                <!-- SLIDE 1 - İmplant -->
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="İmplant Tedavisi">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Keep Your Teeth Healthy</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Take The Best Quality Dental Treatment</h1>
-                            <a href="appointment.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
-                            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Eksik dişleriniz için kalıcı ve estetik çözümler</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">
+                                İmplant Tedavisi
+                            </h1>
+                            <a href="service.html#implant"
+                               class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">
+                                Detaylı Bilgi
+                            </a>
+                            <a href="appointment.html"
+                               class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">
+                                Randevu Al
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- SLIDE 2 - Ortodonti -->
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Ortodonti">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Keep Your Teeth Healthy</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Take The Best Quality Dental Treatment</h1>
-                            <a href="appointment.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
-                            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Düzgün ve sağlıklı bir gülüş için kişiye özel ortodonti çözümleri</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">
+                                Ortodonti
+                            </h1>
+                            <a href="service.html#ortodonti"
+                               class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">
+                                Detaylı Bilgi
+                            </a>
+                            <a href="appointment.html"
+                               class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">
+                                Randevu Al
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- SLIDE 3 - Beyazlatma -->
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Diş Beyazlatma">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Daha beyaz ve parlak dişler için güvenli beyazlatma uygulamaları</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">
+                                Diş Beyazlatma
+                            </h1>
+                            <a href="service.html#beyazlatma"
+                               class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">
+                                Detaylı Bilgi
+                            </a>
+                            <a href="appointment.html"
+                               class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">
+                                Randevu Al
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden">Önceki</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden">Sonraki</span>
             </button>
         </div>
     </div>
@@ -168,43 +234,35 @@
         <div class="container">
             <div class="row gx-0">
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
-                    <div class="bg-primary d-flex flex-column p-5" style="height: 300px;">
-                        <h3 class="text-white mb-3">Opening Hours</h3>
+                    <div class="bg-primary d-flex flex-column p-5" style="height: 220px;">
+                        <h3 class="text-white mb-3">Açılış Saatleri</h3>
                         <div class="d-flex justify-content-between text-white mb-3">
-                            <h6 class="text-white mb-0">Mon - Fri</h6>
-                            <p class="mb-0"> 8:00am - 9:00pm</p>
+                            <h6 class="text-white mb-0">Pazartesi - Cumartesi</h6>
+                            <p class="mb-0"> 9:00 - 19:00</p>
                         </div>
-                        <div class="d-flex justify-content-between text-white mb-3">
-                            <h6 class="text-white mb-0">Saturday</h6>
-                            <p class="mb-0"> 8:00am - 7:00pm</p>
-                        </div>
-                        <div class="d-flex justify-content-between text-white mb-3">
-                            <h6 class="text-white mb-0">Sunday</h6>
-                            <p class="mb-0"> 8:00am - 5:00pm</p>
-                        </div>
-                        <a class="btn btn-light" href="">Appointment</a>
+                        <a class="btn btn-light" href="appointment.html">Randevu</a>
                     </div>
                 </div>
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
                     <div class="bg-dark d-flex flex-column p-5" style="height: 300px;">
-                        <h3 class="text-white mb-3">Search A Doctor</h3>
+                        <h3 class="text-white mb-3">Doktor Ara</h3>
                         <div class="date mb-3" id="date" data-target-input="nearest">
                             <input type="text" class="form-control bg-light border-0 datetimepicker-input"
-                                placeholder="Appointment Date" data-target="#date" data-toggle="datetimepicker" style="height: 40px;">
+                                placeholder="Randevu Tarihi" data-target="#date" data-toggle="datetimepicker" style="height: 40px;">
                         </div>
                         <select class="form-select bg-light border-0 mb-3" style="height: 40px;">
-                            <option selected>Select A Service</option>
-                            <option value="1">Service 1</option>
-                            <option value="2">Service 2</option>
-                            <option value="3">Service 3</option>
+                            <option selected>Hizmet Seçin</option>
+                            <option value="1">Hizmet 1</option>
+                            <option value="2">Hizmet 2</option>
+                            <option value="3">Hizmet 3</option>
                         </select>
-                        <a class="btn btn-light" href="">Search Doctor</a>
+                        <a class="btn btn-light" href="">Doktor Ara</a>
                     </div>
                 </div>
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="bg-secondary d-flex flex-column p-5" style="height: 300px;">
-                        <h3 class="text-white mb-3">Make Appointment</h3>
-                        <p class="text-white">Ipsum erat ipsum dolor clita rebum no rebum dolores labore, ipsum magna at eos et eos amet.</p>
+                    <div class="bg-secondary d-flex flex-column p-5" style="height: 240px;">
+                        <h3 class="text-white mb-3">Randevu Al</h3>
+                        <p class="text-white">Aşağıdaki numarayı arayarak randevu alabilirsiniz.</p>
                         <h2 class="text-white mb-0">+012 345 6789</h2>
                     </div>
                 </div>
@@ -220,22 +278,22 @@
             <div class="row g-5">
                 <div class="col-lg-7">
                     <div class="section-title mb-4">
-                        <h5 class="position-relative d-inline-block text-primary text-uppercase">About Us</h5>
-                        <h1 class="display-5 mb-0">The World's Best Dental Clinic That You Can Trust</h1>
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Hakkımızda</h5>
+                        <h1 class="display-5 mb-0">Güvenebileceğiniz Modern Diş Kliniği</h1>
                     </div>
-                    <h4 class="text-body fst-italic mb-4">Diam dolor diam ipsum sit. Clita erat ipsum et lorem stet no lorem sit clita duo justo magna dolore</h4>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                    <h4 class="text-body fst-italic mb-4">Alanında uzman, deneyimli hekimler</h4>
+                    <p class="mb-4">Güler yüzlü ekip arkadaşlarımız ve çözüm odaklı hizmet anlayışımızla sağlığınızı ön planda tutuyoruz.</p>
                     <div class="row g-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Award Winning</h5>
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Professional Staff</h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Ödüllü</h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Profesyonel Kadro</h5>
                         </div>
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>24/7 Opened</h5>
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Fair Prices</h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>7/24 Açık</h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Uygun Fiyatlar</h5>
                         </div>
                     </div>
-                    <a href="appointment.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn" data-wow-delay="0.6s">Make Appointment</a>
+                    <a href="appointment.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn" data-wow-delay="0.6s">Randevu Al</a>
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
@@ -254,53 +312,53 @@
             <div class="row gx-5">
                 <div class="col-lg-6 py-5">
                     <div class="py-5">
-                        <h1 class="display-5 text-white mb-4">We Are A Certified and Award Winning Dental Clinic You Can Trust</h1>
-                        <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                        <h1 class="display-5 text-white mb-4">Güvenebileceğiniz Sertifikalı ve Ödüllü Bir Diş Kliniğiyiz</h1>
+                        <p class="text-white mb-0">Alanında uzman, deneyimli hekimlerimiz, güler yüzlü ekip arkadaşlarımız ve çözüm odaklı hizmet anlayışımızla sağlığınızı ön planda tutuyoruz.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
-                        <h1 class="text-white mb-4">Make Appointment</h1>
+                        <h1 class="text-white mb-4">Randevu Al</h1>
                         <form>
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
                                     <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 2</option>
-                                        <option value="3">Service 3</option>
+                                        <option selected>Hizmet Seçin</option>
+                                        <option value="1">Hizmet 1</option>
+                                        <option value="2">Hizmet 2</option>
+                                        <option value="3">Hizmet 3</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Select Doctor</option>
-                                        <option value="1">Doctor 1</option>
-                                        <option value="2">Doctor 2</option>
-                                        <option value="3">Doctor 3</option>
+                                        <option selected>Doktor Seçin</option>
+                                        <option value="1">Doktor 1</option>
+                                        <option value="2">Doktor 2</option>
+                                        <option value="3">Doktor 3</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="Adınız" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                                    <input type="email" class="form-control bg-light border-0" placeholder="E-posta Adresiniz" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="date" id="date1" data-target-input="nearest">
                                         <input type="text"
                                             class="form-control bg-light border-0 datetimepicker-input"
-                                            placeholder="Appointment Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
+                                            placeholder="Randevu Tarihi" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="time" id="time1" data-target-input="nearest">
                                         <input type="text"
                                             class="form-control bg-light border-0 datetimepicker-input"
-                                            placeholder="Appointment Time" data-target="#time1" data-toggle="datetimepicker" style="height: 55px;">
+                                            placeholder="Randevu Saati" data-target="#time1" data-toggle="datetimepicker" style="height: 55px;">
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-dark w-100 py-3" type="submit">Make Appointment</button>
+                                    <button class="btn btn-dark w-100 py-3" type="submit">Randevu Al</button>
                                 </div>
                             </div>
                         </form>
@@ -310,6 +368,210 @@
         </div>
     </div>
     <!-- Appointment End -->
+
+
+    <!-- Announcements Start -->
+    <div class="container-fluid py-5 bg-light wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h5 class="position-relative d-inline-block text-primary text-uppercase">
+                    Duyurular & Kampanyalar
+                </h5>
+                <h1 class="mb-0">Kliniğimizden Güncel Haberler</h1>
+            </div>
+
+            <div class="row g-4">
+                <!-- DUYURU 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="bg-white rounded h-100 p-4 shadow-sm">
+                        <h4 class="mb-2">Yeni Hasta İndirim Kampanyası</h4>
+                        <small class="text-muted d-block mb-2">01.12.2025</small>
+                        <p class="mb-3">
+                            Kliniğimize ilk kez gelen hastalar için diş taşı temizliği ve kontrol paketinde özel indirim...
+                        </p>
+                        <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#duyuru1Modal">
+                            Detayları Gör
+                        </button>
+                    </div>
+                </div>
+
+                <!-- DUYURU 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="bg-white rounded h-100 p-4 shadow-sm">
+                        <h4 class="mb-2">Dijital Röntgen Günleri</h4>
+                        <small class="text-muted d-block mb-2">05.12.2025</small>
+                        <p class="mb-3">
+                            Dijital panoramik röntgen çekimlerinde belirli tarihler arasında %20 indirim fırsatı...
+                        </p>
+                        <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#duyuru2Modal">
+                            Detayları Gör
+                        </button>
+                    </div>
+                </div>
+
+                <!-- DUYURU 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="bg-white rounded h-100 p-4 shadow-sm">
+                        <h4 class="mb-2">Öğrencilere Özel Kontrol</h4>
+                        <small class="text-muted d-block mb-2">10.12.2025</small>
+                        <p class="mb-3">
+                            Üniversite öğrencilerine ücretsiz diş muayenesi ve tedavilerde avantajlı fiyatlar...
+                        </p>
+                        <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#duyuru3Modal">
+                            Detayları Gör
+                        </button>
+                    </div>
+                </div>
+
+                <!-- DUYURU 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="bg-white rounded h-100 p-4 shadow-sm">
+                        <h4 class="mb-2">Çocuk Hastalar İçin Eğitim Semineri</h4>
+                        <small class="text-muted d-block mb-2">15.12.2025</small>
+                        <p class="mb-3">
+                            Çocuklarda ağız ve diş sağlığı bilinci için ebeveynlere yönelik ücretsiz seminer...
+                        </p>
+                        <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#duyuru4Modal">
+                            Detayları Gör
+                        </button>
+                    </div>
+                </div>
+
+                <!-- DUYURU 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="bg-white rounded h-100 p-4 shadow-sm">
+                        <h4 class="mb-2">İmplant Tedavisinde Taksit İmkanı</h4>
+                        <small class="text-muted d-block mb-2">20.12.2025</small>
+                        <p class="mb-3">
+                            İmplant tedavilerinde anlaşmalı bankalarla 12 aya varan taksit seçenekleri...
+                        </p>
+                        <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#duyuru5Modal">
+                            Detayları Gör
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="duyurular.html" class="btn btn-outline-primary px-4">
+                    Tüm Duyuruları Gör
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Announcements End -->
+
+
+    <!-- Announcements Modals Start -->
+
+    <!-- DUYURU 1 MODAL -->
+    <div class="modal fade" id="duyuru1Modal" tabindex="-1" aria-labelledby="duyuru1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="duyuru1Label">Yeni Hasta İndirim Kampanyası</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Kliniğimize ilk kez başvuran hastalar için diş taşı temizliği, detaylı muayene ve panoramik
+                        röntgen içeren başlangıç paketinde %30 indirim uygulanmaktadır.
+                    </p>
+                    <ul>
+                        <li><strong>Paket İçeriği:</strong> Muayene, panoramik röntgen, diş taşı temizliği</li>
+                        <li><strong>Kampanya Tarihi:</strong> 01.12.2025 - 31.12.2025</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DUYURU 2 MODAL -->
+    <div class="modal fade" id="duyuru2Modal" tabindex="-1" aria-labelledby="duyuru2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="duyuru2Label">Dijital Röntgen Günleri</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Belirli günlerde çekilen panoramik veya periapikal dijital röntgenlerde %20 indirim
+                        uygulanmaktadır.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DUYURU 3 MODAL -->
+    <div class="modal fade" id="duyuru3Modal" tabindex="-1" aria-labelledby="duyuru3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="duyuru3Label">Öğrencilere Özel Kontrol</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Üniversite kimliğini gösteren tüm öğrenciler, dönem boyunca ücretsiz diş muayenesinden faydalanabilir.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DUYURU 4 MODAL -->
+    <div class="modal fade" id="duyuru4Modal" tabindex="-1" aria-labelledby="duyuru4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="duyuru4Label">Çocuk Hastalar İçin Eğitim Semineri</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Çocuklarda ağız ve diş sağlığının önemi hakkında ebeveynlere yönelik ücretsiz seminer
+                        düzenlenmektedir.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DUYURU 5 MODAL -->
+    <div class="modal fade" id="duyuru5Modal" tabindex="-1" aria-labelledby="duyuru5Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="duyuru5Label">İmplant Tedavisinde Taksit İmkanı</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        İmplant tedavilerinde anlaşmalı bankalar aracılığıyla 12 aya varan taksit imkanı sunulmaktadır.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Announcements Modals End -->
 
 
     <!-- Service Start -->
@@ -324,8 +586,8 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="section-title mb-5">
-                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Services</h5>
-                        <h1 class="display-5 mb-0">We Offer The Best Quality Dental Services</h1>
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Hizmetlerimiz</h5>
+                        <h1 class="display-5 mb-0">En Kaliteli Diş Hizmetlerini Sunuyoruz</h1>
                     </div>
                     <div class="row g-5">
                         <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
@@ -333,7 +595,7 @@
                                 <img class="img-fluid" src="img/service-1.jpg" alt="">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Cosmetic Dentistry</h5>
+                                <h5 class="m-0">Ortodonti</h5>
                             </div>
                         </div>
                         <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
@@ -341,7 +603,7 @@
                                 <img class="img-fluid" src="img/service-2.jpg" alt="">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Dental Implants</h5>
+                                <h5 class="m-0">İmplant</h5>
                             </div>
                         </div>
                     </div>
@@ -355,7 +617,7 @@
                                 <img class="img-fluid" src="img/service-3.jpg" alt="">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Dental Bridges</h5>
+                                <h5 class="m-0">Köprü</h5>
                             </div>
                         </div>
                         <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
@@ -363,15 +625,15 @@
                                 <img class="img-fluid" src="img/service-4.jpg" alt="">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Teeth Whitening</h5>
+                                <h5 class="m-0">Beyazlatma</h5>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5 service-item wow zoomIn" data-wow-delay="0.9s">
                     <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
-                        <h3 class="text-white mb-3">Make Appointment</h3>
-                        <p class="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est magna stet eirmod</p>
+                        <h3 class="text-white mb-3">Randevu Al</h3>
+                        <p class="text-white mb-3">Aşağıdaki numarayı arayarak randevu alabilirsiniz.</p>
                         <h2 class="text-white mb-0">+012 345 6789</h2>
                     </div>
                 </div>
@@ -387,10 +649,10 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
                     <div class="offer-text text-center rounded p-5">
-                        <h1 class="display-5 text-white">Save 30% On Your First Dental Checkup</h1>
-                        <p class="text-white mb-4">Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et at sea ea at dolor justo ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod diam duo lorem magna sit dolore sed et.</p>
-                        <a href="appointment.html" class="btn btn-dark py-3 px-5 me-3">Appointment</a>
-                        <a href="" class="btn btn-light py-3 px-5">Read More</a>
+                        <h1 class="display-5 text-white">İlk Diş Muayenenizde %30 İndirim</h1>
+                        <p class="text-white mb-4">İlk diş muayenenizde %30 indirim fırsatından yararlanabilirsiniz. Sağlıklı gülüşler için hemen randevu alın.</p>
+                        <a href="appointment.html" class="btn btn-dark py-3 px-5 me-3">Randevu Al</a>
+                        <a href="" class="btn btn-light py-3 px-5">Daha Fazla</a>
                     </div>
                 </div>
             </div>
@@ -404,12 +666,12 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-5">
-                    <div class="section-title mb-4">
-                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Pricing Plan</h5>
-                        <h1 class="display-5 mb-0">We Offer Fair Prices for Dental Treatment</h1>
+                    <div class="section-title mb-1">
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Fiyatlandırma</h5>
+                        <h1 class="display-5 mb-0">Uygun Fiyat Avantajları Sunuyoruz</h1>
                     </div>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo eirmod magna dolore erat amet</p>
-                    <h5 class="text-uppercase text-primary wow fadeInUp" data-wow-delay="0.3s">Call for Appointment</h5>
+                    <p class="mb-4"></p>
+                    <h5 class="text-uppercase text-primary wow fadeInUp" data-wow-delay="0.3s">Randevu İçİn Arayın</h5>
                     <h1 class="wow fadeInUp" data-wow-delay="0.6s">+012 345 6789</h1>
                 </div>
                 <div class="col-lg-7">
@@ -418,48 +680,48 @@
                             <div class="position-relative">
                                 <img class="img-fluid rounded-top" src="img/price-1.jpg" alt="">
                                 <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle" style="z-index: 2;">
-                                    <h2 class="text-primary m-0">$35</h2>
+                                    <h2 class="text-primary m-0">1500TL</h2>
                                 </div>
                             </div>
                             <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
-                                <h4>Teeth Whitening</h4>
+                                <h4>Beyazlatma</h4>
                                 <hr class="text-primary w-50 mx-auto mt-0">
-                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <a href="appointment.html" class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
+                                <div class="d-flex justify-content-between mb-3"><span>Modern Ekipman</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Profesyonel Diş Hekimi</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-2"><span>7/24 Destek</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <a href="appointment.html" class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Randevu</a>
                             </div>
                         </div>
                         <div class="price-item pb-4">
                             <div class="position-relative">
                                 <img class="img-fluid rounded-top" src="img/price-2.jpg" alt="">
                                 <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle" style="z-index: 2;">
-                                    <h2 class="text-primary m-0">$49</h2>
+                                    <h2 class="text-primary m-0">4200TL</h2>
                                 </div>
                             </div>
                             <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
-                                <h4>Dental Implant</h4>
+                                <h4>İmplant</h4>
                                 <hr class="text-primary w-50 mx-auto mt-0">
-                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <a href="appointment.html" class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
+                                <div class="d-flex justify-content-between mb-3"><span>Modern Ekipman</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Profesyonel Diş Hekimi</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-2"><span>7/24 Destek</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <a href="appointment.html" class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Randevu</a>
                             </div>
                         </div>
                         <div class="price-item pb-4">
                             <div class="position-relative">
                                 <img class="img-fluid rounded-top" src="img/price-3.jpg" alt="">
                                 <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle" style="z-index: 2;">
-                                    <h2 class="text-primary m-0">$99</h2>
+                                    <h2 class="text-primary m-0">2000TL</h2>
                                 </div>
                             </div>
                             <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
-                                <h4>Root Canal</h4>
+                                <h4>Kanal Tedavisi</h4>
                                 <hr class="text-primary w-50 mx-auto mt-0">
-                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <a href="appointment.html" class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
+                                <div class="d-flex justify-content-between mb-3"><span>Modern Ekipman</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Profesyonel Diş Hekimi</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-2"><span>7/24 Destek</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <a href="appointment.html" class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Randevu</a>
                             </div>
                         </div>
                     </div>
@@ -478,15 +740,15 @@
                     <div class="owl-carousel testimonial-carousel rounded p-5 wow zoomIn" data-wow-delay="0.6s">
                         <div class="testimonial-item text-center text-white">
                             <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-1.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita justo dolor et stet lorem kasd dolore lorem ipsum. At lorem lorem magna ut et, nonumy labore diam erat. Erat dolor rebum sit ipsum.</p>
+                            <p class="fs-5">Gerçekten çok memnun kaldım. Hem doktorum hem de klinik personelleri çok ilgili ve profesyoneldi.</p>
                             <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">Client Name</h4>
+                            <h4 class="text-white mb-0">Nancy Madden</h4>
                         </div>
                         <div class="testimonial-item text-center text-white">
                             <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita justo dolor et stet lorem kasd dolore lorem ipsum. At lorem lorem magna ut et, nonumy labore diam erat. Erat dolor rebum sit ipsum.</p>
+                            <p class="fs-5">Ağrısız bir tedavi süreci yaşadım. Klinikteki ortam çok rahat ve hijyenikti.</p>
                             <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">Client Name</h4>
+                            <h4 class="text-white mb-0">Nora Gill</h4>
                         </div>
                     </div>
                 </div>
@@ -502,9 +764,9 @@
             <div class="row g-5">
                 <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
                     <div class="section-title bg-light rounded h-100 p-5">
-                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Dentist</h5>
-                        <h1 class="display-6 mb-4">Meet Our Certified & Experienced Dentist</h1>
-                        <a href="appointment.html" class="btn btn-primary py-3 px-5">Appointment</a>
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Hekimlerimiz</h5>
+                        <h1 class="display-6 mb-4">Sertifikalı ve Deneyimli Diş Hekimlerimizle Tanışın</h1>
+                        <a href="appointment.html" class="btn btn-primary py-3 px-5">Randevu</a>
                     </div>
                 </div>
                 <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
@@ -519,8 +781,8 @@
                             </div>
                         </div>
                         <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                            <h4 class="mb-2">Dr. John Doe</h4>
-                            <p class="text-primary mb-0">Implant Surgeon</p>
+                            <h4 class="mb-2">Dr. David Anderson</h4>
+                            <p class="text-primary mb-0">Ortodontist</p>
                         </div>
                     </div>
                 </div>
@@ -536,8 +798,8 @@
                             </div>
                         </div>
                         <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                            <h4 class="mb-2">Dr. John Doe</h4>
-                            <p class="text-primary mb-0">Implant Surgeon</p>
+                            <h4 class="mb-2">Dr. Susan Wilson</h4>
+                            <p class="text-primary mb-0">Genel Cerrah</p>
                         </div>
                     </div>
                 </div>
@@ -554,7 +816,7 @@
                         </div>
                         <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
                             <h4 class="mb-2">Dr. John Doe</h4>
-                            <p class="text-primary mb-0">Implant Surgeon</p>
+                            <p class="text-primary mb-0">İmplant Cerrahı</p>
                         </div>
                     </div>
                 </div>
@@ -570,8 +832,8 @@
                             </div>
                         </div>
                         <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                            <h4 class="mb-2">Dr. John Doe</h4>
-                            <p class="text-primary mb-0">Implant Surgeon</p>
+                            <h4 class="mb-2">Dr. Carol Nelson</h4>
+                            <p class="text-primary mb-0">Pedodontist</p>
                         </div>
                     </div>
                 </div>
@@ -587,8 +849,8 @@
                             </div>
                         </div>
                         <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                            <h4 class="mb-2">Dr. John Doe</h4>
-                            <p class="text-primary mb-0">Implant Surgeon</p>
+                            <h4 class="mb-2">Dr. Chaim Fowler</h4>
+                            <p class="text-primary mb-0">İmplant Cerrahı</p>
                         </div>
                     </div>
                 </div>
@@ -604,8 +866,8 @@
             <div class="bg-primary p-5">
                 <form class="mx-auto" style="max-width: 600px;">
                     <div class="input-group">
-                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                        <button class="btn btn-dark px-4">Sign Up</button>
+                        <input type="text" class="form-control border-white p-3" placeholder="E-posta Adresiniz">
+                        <button class="btn btn-dark px-4">Kayıt Ol</button>
                     </div>
                 </form>
             </div>
@@ -619,33 +881,33 @@
         <div class="container pt-5">
             <div class="row g-5 pt-4">
                 <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <h3 class="text-white mb-4">Hızlı Linkler</h3>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Ana Sayfa</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Hakkımızda</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Hizmetlerimiz</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Son Blog</a>
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>İletişim</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <h3 class="text-white mb-4">Popüler Linkler</h3>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Ana Sayfa</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Hakkımızda</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Hizmetlerimiz</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Son Blog</a>
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>İletişim</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>123 Street, New York, USA</p>
+                    <h3 class="text-white mb-4">İletişime Geçin</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>123 Sokak, New York, ABD</p>
                     <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@example.com</p>
                     <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <h3 class="text-white mb-4">Bizi Takip Edin</h3>
                     <div class="d-flex">
                         <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
                         <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
@@ -660,11 +922,11 @@
         <div class="container">
             <div class="row g-0">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved.</p>
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Dent&Care</a>. Tüm Hakları Saklıdır.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a><br>
-                        Distributed by <a class="text-white border-bottom" href="https://themewagon.com">ThemeWagon</a>              
+                    <p class="mb-0">Tasarlayan <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a><br>
+                        Dağıtan <a class="text-white border-bottom" href="https://themewagon.com">ThemeWagon</a>              
                     </p>
                 </div>
             </div>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <title>Dent&Care - Admin</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="../img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="../lib/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="../lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f6f8;
+        }
+        .admin-header {
+            background: #091e3e;
+            color: #fff;
+        }
+        .admin-header h1 {
+            font-size: 1.6rem;
+        }
+        .admin-sidebar {
+            background: #ffffff;
+            border-right: 1px solid #e0e0e0;
+            min-height: 100vh;
+        }
+        .admin-sidebar a {
+            display: block;
+            padding: 10px 15px;
+            border-radius: 6px;
+            color: #333;
+            text-decoration: none;
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+        .admin-sidebar a.active,
+        .admin-sidebar a:hover {
+            background: #0d6efd;
+            color: #fff;
+        }
+        .form-help {
+            font-size: 0.8rem;
+            color: #666;
+        }
+        .table thead {
+            background-color: #0d6efd;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Admin Header -->
+    <div class="container-fluid admin-header py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="m-0">
+                <i class="fa fa-tooth me-2"></i>
+                Dent&Care Yönetim Paneli
+            </h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-lg-3 col-xl-2 admin-sidebar p-4">
+                <h5 class="mb-3">Menü</h5>
+                <a href="admin-duyurular.html">
+                    <i class="fa fa-bullhorn me-2"></i> Duyurular
+                </a>
+                <a href="admin-hizmetler.html">
+                    <i class="fa fa-tooth me-2"></i> Hizmetler
+                </a>
+                <a href="admin-sayilarla-klinik.html" class="active">
+                    <i class="fa fa-chart-bar me-2"></i> Sayılarla Klinik
+                </a>
+                <hr>
+                <a href="../index.html">
+                    <i class="fa fa-globe me-2"></i> Siteyi Görüntüle
+                </a>
+            </aside>
+            <main class="col-lg-9 col-xl-10 p-4">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h3 class="mb-1">Sayılarla Klinik Verileri</h3>
+                    </div>
+                    <span class="badge bg-primary">Admin Paneli</span>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">
+                            <i class="fa fa-chart-line me-2"></i> Yıllara Göre Toplam Hasta Sayısı
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="table-responsive mb-3">
+                                <table class="table align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Yıl</th>
+                                            <th scope="col">Hasta Sayısı</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2021</td>
+                                            <td><input type="number" class="form-control" value="820"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022</td>
+                                            <td><input type="number" class="form-control" value="1100"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2023</td>
+                                            <td><input type="number" class="form-control" value="1350"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2024</td>
+                                            <td><input type="number" class="form-control" value="1600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2025</td>
+                                            <td><input type="number" class="form-control" value="1850"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa fa-save me-2"></i> Değişiklikleri Kaydet
+                            </button>
+                            <button type="reset" class="btn btn-outline-secondary ms-2">Varsayılana Döndür</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="card shadow-sm">
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">
+                            <i class="fa fa-chart-pie me-2"></i> Tedavi Türlerinin Yüzdesel Dağılımı
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <label class="form-label">İmplant (%)</label>
+                                    <input type="number" class="form-control" value="35">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Kanal Tedavisi (%)</label>
+                                    <input type="number" class="form-control" value="25">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Diş Beyazlatma (%)</label>
+                                    <input type="number" class="form-control" value="15">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Dolgu (%)</label>
+                                    <input type="number" class="form-control" value="15">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Diğer (%)</label>
+                                    <input type="number" class="form-control" value="10">
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fa fa-save me-2"></i> Değişiklikleri Kaydet
+                                    </button>
+                                    <button type="reset" class="btn btn-outline-secondary ms-2">
+                                        Varsayılana Döndür
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <title>Dent&Care - Admin</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="../img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="../lib/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="../lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f6f8;
+        }
+        .admin-header {
+            background: #091e3e;
+            color: #fff;
+        }
+        .admin-header h1 {
+            font-size: 1.6rem;
+        }
+        .admin-sidebar {
+            background: #ffffff;
+            border-right: 1px solid #e0e0e0;
+            min-height: 100vh;
+        }
+        .admin-sidebar a {
+            display: block;
+            padding: 10px 15px;
+            border-radius: 6px;
+            color: #333;
+            text-decoration: none;
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+        .admin-sidebar a.active,
+        .admin-sidebar a:hover {
+            background: #0d6efd;
+            color: #fff;
+        }
+        .form-help {
+            font-size: 0.8rem;
+            color: #666;
+        }
+        .table thead {
+            background-color: #0d6efd;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Admin Header -->
+    <div class="container-fluid admin-header py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="m-0">
+                <i class="fa fa-tooth me-2"></i>
+                Dent&Care Yönetim Paneli
+            </h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+                <aside class="col-lg-3 col-xl-2 admin-sidebar p-4">
+                    <h5 class="mb-3">Menü</h5>
+                    <a href="admin-duyurular.html">
+                        <i class="fa fa-bullhorn me-2"></i> Duyurular
+                    </a>
+                    <a href="admin-hizmetler.html" class="active">
+                        <i class="fa fa-tooth me-2"></i> Hizmetler
+                    </a>
+                    <a href="admin-sayilarla-klinik.html">
+                        <i class="fa fa-chart-bar me-2"></i> Sayılarla Klinik
+                    </a>
+                    <hr>
+                    <a href="../index.html">
+                        <i class="fa fa-globe me-2"></i> Siteyi Görüntüle
+                    </a>
+                </aside>
+                <main class="col-lg-9 col-xl-10 p-4">
+                    <!-- Sayfa başlığı -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div>
+                            <h3 class="mb-1">Hizmet Yönetimi</h3>
+                        </div>
+                        <span class="badge bg-primary">Admin Paneli</span>
+                    </div>
+
+                    <!-- Yeni hizmet Ekleme -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0">
+                                <i class="fa fa-plus-circle me-2"></i> Yeni Hizmet Ekle
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <label class="form-label">Hizmet Kategorisi</label>
+                                        <select class="form-select">
+                                            <option selected>Diş Tedavileri</option>
+                                            <option>Estetik Uygulamalar</option>
+                                            <option>Ortodonti</option>
+                                            <option>Ağız ve Çene Cerrahisi</option>
+                                            <option>Çocuk Diş Hekimliği</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label class="form-label">Hizmet Adı</label>
+                                        <input type="text" class="form-control"
+                                            placeholder="">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Kısa Açıklama</label>
+                                        <textarea class="form-control" rows="2" placeholder=""></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Detaylı Açıklama</label>
+                                        <textarea class="form-control" rows="4" placeholder=""></textarea>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Fiyat (₺)</label>
+                                        <input type="number" class="form-control" placeholder="0">
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label class="form-label">Durum</label>
+                                        <select class="form-select">
+                                            <option>Yayında</option>
+                                            <option>Taslak</option>
+                                            <option>Pasif</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label class="form-label">Hizmet Görseli</label>
+                                        <input type="file" class="form-control">
+                                        <div class="form-help">
+                                            JPG/PNG vb.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="fa fa-save me-2"></i> Hizmeti Kaydet
+                                        </button>
+                                        <button type="reset" class="btn btn-outline-secondary ms-2">
+                                            Temizle
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Hizmetler Tablosu -->
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0">
+                                <i class="fa fa-list me-2"></i> Mevcut Hizmetler
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Kategori</th>
+                                            <th scope="col">Hizmet Adı</th>
+                                            <th scope="col">Fiyat (₺)</th>
+                                            <th scope="col">Anasayfada</th>
+                                            <th scope="col">Durum</th>
+                                            <th scope="col" class="text-end">İşlemler</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Diş Tedavileri</td>
+                                            <td>Diş İmplantı</td>
+                                            <td>8500</td>
+                                            <td>Evet</td>
+                                            <td><span class="badge bg-success">Yayında</span></td>
+                                            <td class="text-end">
+                                                <button class="btn btn-sm btn-outline-primary">
+                                                    <i class="fa fa-pen"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-danger ms-1">
+                                                    <i class="fa fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ortodonti</td>
+                                            <td>Ortodonti</td>
+                                            <td>6000</td>
+                                            <td>Evet</td>
+                                            <td><span class="badge bg-success">Yayında</span></td>
+                                            <td class="text-end">
+                                                <button class="btn btn-sm btn-outline-primary">
+                                                    <i class="fa fa-pen"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-danger ms-1">
+                                                    <i class="fa fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Estetik Uygulamalar</td>
+                                            <td>Diş Beyazlatma</td>
+                                            <td>1200</td>
+                                            <td>Hayır</td>
+                                            <td><span class="badge bg-secondary">Taslak</span></td>
+                                            <td class="text-end">
+                                                <button class="btn btn-sm btn-outline-primary">
+                                                    <i class="fa fa-pen"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-danger ms-1">
+                                                    <i class="fa fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Diş Tedavileri</td>
+                                            <td>Kanal Tedavisi</td>
+                                            <td>1800</td>
+                                            <td>Hayır</td>
+                                            <td><span class="badge bg-success">Yayında</span></td>
+                                            <td class="text-end">
+                                                <button class="btn btn-sm btn-outline-primary">
+                                                    <i class="fa fa-pen"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-danger ms-1">
+                                                    <i class="fa fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

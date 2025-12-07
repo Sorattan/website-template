@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="utf-8">
-    <title>DentCare - Dental Clinic Website Template</title>
+    <title>Dent&Care</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -53,7 +53,7 @@
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center">
-                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Çalışma Saatleri: Pazartesi - Cumartesi 09.00 - 19.00, Pazar Kapalı </small>
                 </div>
             </div>
             <div class="col-md-6 text-center text-lg-end">
@@ -74,35 +74,62 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
         <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>DentCare</h1>
+            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Dent&Care</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link active">Service</a>
+                <a href="index.html" class="nav-item nav-link">Ana Sayfa</a>
+                <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
+
+                <!-- HİZMETLERİMİZ -->
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hizmetlerimiz</a>
                     <div class="dropdown-menu m-0">
-                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                        <a href="team.html" class="dropdown-item">Our Dentist</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                        <a href="service.html#implant" class="dropdown-item">İmplant Tedavisi</a>
+                        <a href="service.html#ortodonti" class="dropdown-item">Ortodonti</a>
+                        <a href="service.html#beyazlatma" class="dropdown-item">Diş Beyazlatma</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+
+                <!-- BİRİMLERİMİZ -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Birimlerimiz</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="team.html#yetiskin" class="dropdown-item">Genel Cerrahi</a>
+                        <a href="team.html#cocuk" class="dropdown-item">Pedodonti</a>
+                        <a href="team.html#cerrahi" class="dropdown-item">Ağız ve Çene Cerrahisi</a>
+                    </div>
+                </div>
+
+                <!-- SAYFALAR -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sayfalar</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="price.html" class="dropdown-item">Fiyatlandırma</a>
+                        <a href="testimonial.html" class="dropdown-item">Hasta Yorumları</a>
+                        <a href="duyurular.html" class="dropdown-item">Duyurular</a>
+                        <a href="sayilarla-klinik.html" class="dropdown-item">Sayılarla Kliniğimiz</a>
+                        <a href="appointment.html" class="dropdown-item">Randevu Formu</a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="nav-item nav-link">İletişim</a>
+                <a href="misyon-vizyon.html" class="nav-item nav-link">Misyon-Vizyon</a>
             </div>
-            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
-            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <i class="fa fa-search"></i>
+            </button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Randevu Al</a>
         </div>
     </nav>
     <!-- Navbar End -->
 
 
-    <!-- Full Screen Search Start -->
+    <!-- Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
@@ -111,24 +138,24 @@
                 </div>
                 <div class="modal-body d-flex align-items-center justify-content-center">
                     <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Aranacak kelimeyi yazın">
                         <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Full Screen Search End -->
+    <!-- Search End -->
 
 
     <!-- Hero Start -->
     <div class="container-fluid bg-primary py-5 hero-header mb-5">
         <div class="row py-3">
             <div class="col-12 text-center">
-                <h1 class="display-3 text-white animated zoomIn">Services</h1>
-                <a href="" class="h4 text-white">Home</a>
+                <h1 class="display-3 text-white animated zoomIn">Hizmetler</h1>
+                <a href="" class="h4 text-white">Ana Sayfa</a>
                 <i class="far fa-circle text-white px-2"></i>
-                <a href="" class="h4 text-white">Services</a>
+                <a href="" class="h4 text-white">Hizmetler</a>
             </div>
         </div>
     </div>
@@ -147,24 +174,24 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="section-title mb-5">
-                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Services</h5>
-                        <h1 class="display-5 mb-0">We Offer The Best Quality Dental Services</h1>
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Hizmetlerimiz</h5>
+                        <h1 class="display-5 mb-0">En İyi Kalitede Diş Hizmetleri Sunuyoruz</h1>
                     </div>
                     <div class="row g-5">
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
+                        <div id="ortodonti" class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-1.jpg" alt="">
+                                <img class="img-fluid" src="img/service-1.jpg" alt="Ortodonti">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Cosmetic Dentistry</h5>
+                                <h5 class="m-0">Ortodonti</h5>
                             </div>
                         </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
+                        <div id="implant" class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-2.jpg" alt="">
+                                <img class="img-fluid" src="img/service-2.jpg" alt="İmplant">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Dental Implants</h5>
+                                <h5 class="m-0">İmplant</h5>
                             </div>
                         </div>
                     </div>
@@ -178,23 +205,23 @@
                                 <img class="img-fluid" src="img/service-3.jpg" alt="">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Dental Bridges</h5>
+                                <h5 class="m-0">Köprü</h5>
                             </div>
                         </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
+                        <div id="beyazlatma" class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-4.jpg" alt="">
+                                <img class="img-fluid" src="img/service-4.jpg" alt="Beyazlatma">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Teeth Whitening</h5>
+                                <h5 class="m-0">Beyazlatma</h5>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5 service-item wow zoomIn" data-wow-delay="0.9s">
                     <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
-                        <h3 class="text-white mb-3">Make Appointment</h3>
-                        <p class="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est magna stet eirmod</p>
+                        <h3 class="text-white mb-3">Randevu Al</h3>
+                        <p class="text-white mb-3">Aşağıdaki numarayı arayarak randevu alabilirsiniz.</p>
                         <h2 class="text-white mb-0">+012 345 6789</h2>
                     </div>
                 </div>
@@ -210,8 +237,8 @@
             <div class="bg-primary p-5">
                 <form class="mx-auto" style="max-width: 600px;">
                     <div class="input-group">
-                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                        <button class="btn btn-dark px-4">Sign Up</button>
+                        <input type="text" class="form-control border-white p-3" placeholder="E-posta Adresiniz">
+                        <button class="btn btn-dark px-4">Kayıt Ol</button>
                     </div>
                 </form>
             </div>
@@ -225,33 +252,33 @@
         <div class="container pt-5">
             <div class="row g-5 pt-4">
                 <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <h3 class="text-white mb-4">Hızlı Linkler</h3>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Ana Sayfa</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Hakkımızda</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Hizmetlerimiz</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Son Blog</a>
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>İletişim</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <h3 class="text-white mb-4">Popüler Linkler</h3>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Ana Sayfa</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Hakkımızda</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Hizmetlerimiz</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Son Blog</a>
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>İletişim</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>123 Street, New York, USA</p>
+                    <h3 class="text-white mb-4">İletişim</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>123 Sokak, New York, ABD</p>
                     <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@example.com</p>
                     <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <h3 class="text-white mb-4">Bizi Takip Edin</h3>
                     <div class="d-flex">
                         <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
                         <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
@@ -266,11 +293,11 @@
         <div class="container">
             <div class="row g-0">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved.</p>
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Dent&Care</a>. Tüm Hakları Saklıdır.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a><br>
-                        Distributed by <a class="text-white border-bottom" href="https://themewagon.com">ThemeWagon</a>          
+                    <p class="mb-0">Tasarlayan <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a><br>
+                        Dağıtan <a class="text-white border-bottom" href="https://themewagon.com">ThemeWagon</a>          
                     
                     </p>
                 </div>
